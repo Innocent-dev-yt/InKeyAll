@@ -1,4 +1,3 @@
-
 ---
 title: InKeyAll Documentation
 theme: jekyll-theme-midnight

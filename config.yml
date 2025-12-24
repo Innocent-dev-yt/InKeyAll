@@ -1,0 +1,95 @@
+# KeyAll Plugin Configuration
+# Author: InnocentDevYT
+
+# Examples of KeyAll setup
+settings:
+  reset-milestones-on-reload: false
+
+milestone-settings:
+  enabled: true
+  disabled-message: "&cThe community goals system is currently disabled."
+  goals-message:
+    - "&b&l--- Community Goals ---"
+    - "&7Currently: &f%online% players online"
+    - ""
+    - "%goals_list%"
+    - ""
+    - "&b&l-----------------------"
+  # This is how each individual goal line looks inside the %goals_list%
+  goal-line-format: "&e%milestone_id%: &f%online%/%required% Players"
+
+keyalls:
+  daily:
+    interval-seconds: 3600
+    key-name: Daily Key
+    broadcast-message: "&aYou received a %key_name% in KeyAll!"
+    key-command: "give %player_name% minecraft:diamond 1"
+    permission: "inkeyall.daily"
+
+  vip:
+    interval-seconds: 1800
+    key-name: Vip Key
+    broadcast-message: "&bYou received a %key_name% in KeyAll!"
+    key-command: "give %player_name% minecraft:emerald 3"
+    permission: "inkeyall.vip"
+
+  event:
+    interval-seconds: 600
+    key-name: Event Key
+    broadcast-message: "&eYou received a %key_name% in KeyAll!"
+    key-command: "give %player_name% minecraft:gold_ingot 1"
+    permission: "inkeyall.vip"
+
+# Automated rewards based on online player count
+milestones:
+  player-limit-10:
+    enabled: true
+    player-count: 10
+    cooldown-seconds: 3600
+    key-name: "Starter Key"
+    broadcast-message: "&6&lGOAL &8» &e10 Players reached! Everyone gets a &f%key_name%&e!"
+    key-command: "give %player_name% minecraft:iron_ingot 5"
+    permission: "none"
+
+  player-limit-25-vip:
+    enabled: true
+    player-count: 25
+    cooldown-seconds: 7200
+    key-name: "VIP Crate Key"
+    broadcast-message: "&b&lVIP &8» &325 Players! &bRanked players are receiving a &f%key_name%&b!"
+    key-command: "give %player_name% minecraft:diamond 2"
+    permission: "inkeyall.vip"
+
+  player-limit-50:
+    enabled: true
+    player-count: 50
+    cooldown-seconds: 86400
+    key-name: "Legendary Key"
+    broadcast-message: "&d&lPEAK &8» &550 Players online! Giving &f%key_name%s &5to all!"
+    key-command: "give %player_name% minecraft:netherite_ingot 1"
+    permission: "none"
+
+time-units:
+  day:
+    singular: "day"
+    plural: "days"
+    short: "d"
+  hour:
+    singular: "hour"
+    plural: "hours"
+    short: "h"
+  minute:
+    singular: "minute"
+    plural: "minutes"
+    short: "m"
+  second:
+    singular: "second"
+    plural: "seconds"
+    short: "s"
+
+# Timer display formats
+timer-format:
+  short: "&a{d}{d_short} &b{h}{h_short} &e{m}{m_short} &f{s}{s_short}"
+  full: "&a{d} {d_label} &b{h} {h_label} &e{m} {m_label} &f{s} {s_label}"
+  optimized-short: "&a{d}{d_short} &b{h}{h_short} &e{m}{m_short} &f{s}{s_short}"
+  optimized-full: "&a{d} {d_label} &b{h} {h_label} &e{m} {m_label} &f{s} {s_label}"

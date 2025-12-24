@@ -1,7 +1,7 @@
 
 ---
 title: InKeyAll Documentation
-theme: jekyll-theme-cayman
+theme: jekyll-theme-midnight
 ---
 
 # 🗝️ InKeyAll

@@ -1,6 +1,6 @@
 ---
+layout: default
 title: InKeyAll Documentation
-theme: jekyll-theme-midnight
 ---
 
 # 🗝️ InKeyAll

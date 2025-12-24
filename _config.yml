@@ -1,5 +1,6 @@
 title: InKeyAll Documentation
 description: The Ultimate KeyAll & Milestone Reward System
-remote_theme: pages-themes/midnight
+remote_theme: pages-themes/hacker
 plugins:
   - jekyll-remote-theme
+show_downloads: true

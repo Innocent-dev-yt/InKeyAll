@@ -1,7 +1,3 @@
----
-title: InKeyAll Documentation
-theme: jekyll-theme-midnight
----
 
 # 🗝️ InKeyAll
 ### The Ultimate KeyAll Plugin

@@ -5,7 +5,7 @@ theme: jekyll-theme-cayman
 ---
 
 # 🗝️ InKeyAll
-### The Ultimate KeyAll Plugin
+### The Ultimate KeyAll Plugin 
 
 **InKeyAll** is a professional-grade Minecraft plugin designed to drive player engagement through automated "KeyAll" events and community-driven player-count milestones.
 
